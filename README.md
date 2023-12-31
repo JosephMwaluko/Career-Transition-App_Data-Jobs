@@ -1,4 +1,5 @@
 **Project Title:** The Ultimate Career Decision-Making Guide: - Data Jobs
+
 **Tagline:** Navigating the Data-Driven Career Landscape: A Deep Dive into AI, Machine Learning, and Data Science Salaries.
 
 **1.0 Introduction:**
