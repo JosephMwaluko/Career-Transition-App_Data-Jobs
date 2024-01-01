@@ -30,7 +30,7 @@ with st.expander("About This App"):
              "that combines both the employee_residence and company_location columns into a single column. \n"
              "The 'salary' and 'salary_currency' columns were dropped from the dataset. \n")
     # Loading an image from a local file.
-    image_path = r"C:\Users\succe\OneDrive\Desktop\ADS-Final-Project\Image_Title.PNG" 
+    image_path = "https://github.com/JosephMwaluko/Career-Transition-App-Guide--Data-Jobs/blob/main/Image_Title.PNG" 
     image = Image.open(image_path)
     st.image(image, caption='Figure 1', use_column_width=True)
     st.write("Believe It!! These are just but examples of the available spaces to take Advantage of \n"
