@@ -60,7 +60,7 @@ o	FL: Freelance
   	updated accordingly. This was proven during the application development as the current value was printed out every time the Data analysis Jupyter Notebook was opened and the cell ran.
   	![Alt text](https://github.com/JosephMwaluko/Career-Transition-App-Guide--Data-Jobs/blob/main/Engineered%20Feature%202.PNG)
 4.	Creating a new dataset column that checks and indicates if an employee comes from the company location - same country code in the dataset.
-   ![Alt text](https://github.com/JosephMwaluko/Career-Transition-App-Guide--Data-Jobs/blob/main/Engineered%20Feature%201.PNG)
+   ![Alt text](https://github.com/JosephMwaluko/Career-Transition-App-Guide--Data-Jobs/blob/main/Engineered%20Feature%203.PNG)
  	
 **2.2 Key Analytical Dimensions:**
 1. Work Years: Examining how salaries evolve over the years.
