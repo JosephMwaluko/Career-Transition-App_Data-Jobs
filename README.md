@@ -52,7 +52,7 @@ o	FL: Freelance
 **2.1 The Engineered Features**
 1.	Combining the experience levels, employment types, remote ratios, and company sizes initials with their full names.
    This ensured proper labeling, especially during data visualizations.
-  	![Engineered Feature 1](C:\Users\succe\OneDrive\Desktop\ADS-Final-Project\Features\Engineered Feature 1.PNG)
+  	![Engineered Feature 1](Engineered Feature 1.PNG)
 3.	The "salary_in_usd" column was converted to Kenyan Shillings and renamed “Salary_in_KES.” Since the dataset is updated weekly, the process of conversion was automated.
     A function was created that requests the current USD Dollar exchange rate versus the Kenyan Shilling and multiplies it by the salary values in dollars to get salary value in
   	Kenyan money. The function uses an API Key and a base URL for a website where it requests the current exchange rate, prints it on the output, and multiplies it with salary calculated
