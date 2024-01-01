@@ -57,7 +57,8 @@ o	FL: Freelance
   	Kenyan money. The function uses an API Key and a base URL for a website where it requests the current exchange rate, prints it on the output, and multiplies it with salary calculated
   	in USD dollars to create a new column named “Salary_in_KES.” Therefore, every time the data-jobs guide application is launched, the process will be repeated, and the output will be
   	updated accordingly. This was proven during the application development as the current value was printed out every time the Data analysis Jupyter Notebook was opened and the cell ran.
-3.	Creating a new dataset column that checks and indicates if an employee comes from the company location - same country code in the dataset.
+  	![Alt text](https://github.com/JosephMwaluko/Career-Transition-App-Guide--Data-Jobs/blob/main/Engineered%20Feature%202.PNG)
+4.	Creating a new dataset column that checks and indicates if an employee comes from the company location - same country code in the dataset.
  	
 **2.2 Key Analytical Dimensions:**
 1. Work Years: Examining how salaries evolve over the years.
