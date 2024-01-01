@@ -59,7 +59,7 @@ o	FL: Freelance
   	in USD dollars to create a new column named “Salary_in_KES.” Therefore, every time the data-jobs guide application is launched, the process will be repeated, and the output will be
   	updated accordingly. This was proven during the application development as the current value was printed out every time the Data analysis Jupyter Notebook was opened and the cell ran.
   	![Alt text](https://github.com/JosephMwaluko/Career-Transition-App-Guide--Data-Jobs/blob/main/Engineered%20Feature%202.PNG)
-4.	Creating a new dataset column that checks and indicates if an employee comes from the company location - same country code in the dataset.
+3.	Creating a new dataset column that checks and indicates if an employee comes from the company location - same country code in the dataset.
    ![Alt text](https://github.com/JosephMwaluko/Career-Transition-App-Guide--Data-Jobs/blob/main/Engineered%20Feature%203.PNG)
  	
 **2.2 Key Analytical Dimensions:**
@@ -71,6 +71,7 @@ o	FL: Freelance
 6. Employee Residence:  Exploring the impact of residing in a specific country on earnings.
 7. Remote Ratio: Assessing the influence of remote work arrangements on salaries.
 8. Salary_in_KES: Standardizing salaries to a common currency for cross-country comparisons.
+
 **Conclusion**
 By examining these dimensions, the project seeks to provide a nuanced perspective on the diverse factors shaping salaries in the AI, ML, and Data Science sectors.
 Armed with these insights, individuals can navigate their career paths with a clearer understanding of the landscape, making strategic decisions that enhance their success in these
