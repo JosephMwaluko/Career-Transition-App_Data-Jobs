@@ -52,6 +52,7 @@ o	FL: Freelance
 **2.1 The Engineered Features**
 1.	Combining the experience levels, employment types, remote ratios, and company sizes initials with their full names.
    This ensured proper labeling, especially during data visualizations.
+  	![Alt text](https://github.com/JosephMwaluko/Career-Transition-App-Guide--Data-Jobs/blob/main/Engineered%20Feature%201.PNG)
 2.	The "salary_in_usd" column was converted to Kenyan Shillings and renamed “Salary_in_KES.” Since the dataset is updated weekly, the process of conversion was automated.
     A function was created that requests the current USD Dollar exchange rate versus the Kenyan Shilling and multiplies it by the salary values in dollars to get salary value in
   	Kenyan money. The function uses an API Key and a base URL for a website where it requests the current exchange rate, prints it on the output, and multiplies it with salary calculated
@@ -59,6 +60,7 @@ o	FL: Freelance
   	updated accordingly. This was proven during the application development as the current value was printed out every time the Data analysis Jupyter Notebook was opened and the cell ran.
   	![Alt text](https://github.com/JosephMwaluko/Career-Transition-App-Guide--Data-Jobs/blob/main/Engineered%20Feature%202.PNG)
 4.	Creating a new dataset column that checks and indicates if an employee comes from the company location - same country code in the dataset.
+   ![Alt text](https://github.com/JosephMwaluko/Career-Transition-App-Guide--Data-Jobs/blob/main/Engineered%20Feature%201.PNG)
  	
 **2.2 Key Analytical Dimensions:**
 1. Work Years: Examining how salaries evolve over the years.
