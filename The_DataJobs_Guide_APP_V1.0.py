@@ -17,6 +17,12 @@ st.set_page_config(page_title="The Ultimate Career Decision-Making Guide:- Data 
 st.title("The Ultimate Career Decision-Making Guide:- Data Jobs")
 st.write("Navigating the Data-Driven Career Landscape: A Deep Dive into Artificisl Intelligence, Machine Learning, and Data Science Salaries. \n"
          "Enabling you to make the most informed career decisions on AI, ML, and Data Science spaces.")
+# Loading an image from a local file.
+image_path = 'Image_Title.PNG' 
+image = Image.open(image_path)
+st.image(image, caption='Figure 1', use_column_width=True)
+st.write("Believe It!! These are just but examples of the available spaces to take Advantage of \n"
+         "and Realize Your Dreams in no time.")
 
 # Creating an expandable box about this App.
 with st.expander("About This App"):
@@ -29,13 +35,7 @@ with st.expander("About This App"):
              "columns contained the same country code, a function was defined to create a new column named 'employee_company_location' \n"
              "that combines both the employee_residence and company_location columns into a single column. \n"
              "The 'salary' and 'salary_currency' columns were dropped from the dataset. \n")
-    # Loading an image from a local file.
-    image_path = 'Image_Title.PNG' 
-    image = Image.open(image_path)
-    st.image(image, caption='Figure 1', use_column_width=True)
-    st.write("Believe It!! These are just but examples of the available spaces to take Advantage of \n"
-         "and Realize Your Dreams in no time.")
-
+         
 # Creating an expandable box about the App's Targeted audience.
 with st.expander("The Targeted Audience"):
     st.write("Everyone who is looking for a career transition into the world of advancing technologies. \n" 
