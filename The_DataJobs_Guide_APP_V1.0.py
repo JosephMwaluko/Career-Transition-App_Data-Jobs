@@ -103,8 +103,9 @@ with st.expander("WARNING: User Usecases"):
     "contributed by professionals in this fields, there are high chances of success with our guide.")
 
 # Data Visualization
-st.title("The Ultimate and Well Curated Career Insights Visualizations.")
-st.write("Check out the impressing & impactiful knowledge based visuals to make the ultimate career decisions.")
+st.title("The Ultimate and Well Curated Career Insights.")
+st.write("Check out the impressing & impactiful knowledge based visuals and backed up by data to make the ultimate career decisions.\n"
+        "The first insigt is visualized by default. Choose the next one after reading the first insight displayed.)
 
 # The first visualization is a bar chart showing the average salary paid per work_year.
 def Insight_1():
