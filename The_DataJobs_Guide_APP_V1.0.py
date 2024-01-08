@@ -21,7 +21,7 @@ st.write("Navigating the Data-Driven Career Landscape: A Deep Dive into Artifici
 # Loading an image from a local file.
 image_path = 'Image_Title.PNG' 
 image = Image.open(image_path)
-st.image(image, caption='Goodies Available to You!!', use_column_width=True)
+st.image(image, caption='All the Reasons to be Excited. Goodies Available to You!!', use_column_width=True)
 st.write("Believe It!! These are just but examples of the available spaces to take Advantage of \n"
          "and Realize Your Dreams in no time.")
 
@@ -88,26 +88,12 @@ def load_engineered_data():
 
 data = load_engineered_data()
 
-# Define a function to add custom CSS
-def set_expander_style():
-    # Specifying the background color and other styles wanted on my Application.
-    style = """
-        <style>
-            .st-bk {
-                background-color: #808080;  /* Set your desired background color */
-                padding: 10px;  /* Adjust padding as needed */
-            }
-        </style>
-    """
-    st.markdown(style, unsafe_allow_html=True)
-    return style
-# Use the set_expander_style function to apply the styling
-if set_expander_style():
-         st.checkbox("The Salaries Raw Dataset. \n"
-               "Check the Box to the Left by Clicking Inside It Once.")
-             st.subheader("The Modified Raw Data")
-             st.write(data.columns.tolist())
-             st.write(data)
+# Create a check box to visualize the Raw Data.
+if st.checkbox("The Salaries Raw Dataset. \n"
+               "Check the Box to the Left by Clicking Inside It Once."):
+    st.subheader("The Modified Raw Data")
+    st.write(data.columns.tolist())
+    st.write(data)
 
 # Write a warning notice to the user about the normal use case of the Application.
 with st.expander("WARNING: User Usecases"):
