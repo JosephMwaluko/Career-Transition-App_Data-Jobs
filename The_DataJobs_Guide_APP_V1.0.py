@@ -21,7 +21,7 @@ st.write("Navigating the Data-Driven Career Landscape: A Deep Dive into Artifici
 # Loading an image from a local file.
 image_path = 'Image_Title.PNG' 
 image = Image.open(image_path)
-st.image(image, caption='Figure 1', use_column_width=True)
+st.image(image, caption='Goodies Available to You!!', use_column_width=True)
 st.write("Believe It!! These are just but examples of the available spaces to take Advantage of \n"
          "and Realize Your Dreams in no time.")
 
@@ -104,7 +104,7 @@ def set_expander_style():
 # Use the set_expander_style function to apply the styling
 if set_expander_style():
          st.checkbox("The Salaries Raw Dataset. \n"
-               "Check the Box to the Left by Clicking Inside It Once."):
+               "Check the Box to the Left by Clicking Inside It Once.")
              st.subheader("The Modified Raw Data")
              st.write(data.columns.tolist())
              st.write(data)
