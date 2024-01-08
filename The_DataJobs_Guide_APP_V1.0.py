@@ -17,6 +17,7 @@ st.set_page_config(page_title="The Ultimate Career Decision-Making Guide:- Data 
 st.title("The Ultimate Career Decision-Making Guide:- Data Jobs")
 st.write("Navigating the Data-Driven Career Landscape: A Deep Dive into Artificisl Intelligence, Machine Learning, and Data Science Salaries. \n"
          "Enabling you to make the most informed career decisions on AI, ML, and Data Science spaces.")
+
 # Loading an image from a local file.
 image_path = 'Image_Title.PNG' 
 image = Image.open(image_path)
@@ -87,12 +88,28 @@ def load_engineered_data():
 
 data = load_engineered_data()
 
-if st.checkbox("The Salaries Raw Dataset. \n"
+# Define a function to add custom CSS
+def set_expander_style():
+    # Specifying the background color and other styles wanted on my Application.
+    style = """
+        <style>
+            .st-bk {
+                background-color: #808080;  /* Set your desired background color */
+                padding: 10px;  /* Adjust padding as needed */
+            }
+        </style>
+    """
+    st.markdown(style, unsafe_allow_html=True)
+    return style
+# Use the set_expander_style function to apply the styling
+if set_expander_style():
+         st.checkbox("The Salaries Raw Dataset. \n"
                "Check the Box to the Left by Clicking Inside It Once."):
-    st.subheader("The Modified Raw Data")
-    st.write(data.columns.tolist())
-    st.write(data)
-    # Write a warning notice to the user about the normal use case of the Application.
+             st.subheader("The Modified Raw Data")
+             st.write(data.columns.tolist())
+             st.write(data)
+
+# Write a warning notice to the user about the normal use case of the Application.
 with st.expander("WARNING: User Usecases"):
     st.write("No guarantee you will be successful in any of the spaces you may choose to take advantage of.\n"
     "This is simply a guide to help you make the most informed career decisions on the available spaces \n"
