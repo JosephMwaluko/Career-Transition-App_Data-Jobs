@@ -76,3 +76,7 @@ o	FL: Freelance
 By examining these dimensions, the project seeks to provide a nuanced perspective on the diverse factors shaping salaries in the AI, ML, and Data Science sectors.
 Armed with these insights, individuals can navigate their career paths with a clearer understanding of the landscape, making strategic decisions that enhance their success in these
 dynamic and high-demand fields.
+
+**The Streamlit Application Link:** It takes you to the final application deployed using the Streamlit Sharing platform - Streamlit.io.
+https://career-transition-app-guide--data-jobs-mykju9yk46ziy4cagw9it8.streamlit.app/
+
