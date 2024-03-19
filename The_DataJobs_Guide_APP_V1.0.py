@@ -15,14 +15,14 @@ from PIL import Image
 st.set_page_config(page_title="The Ultimate Career Decision-Making Guide:- Data Jobs", page_icon=":bar_chart:", layout="centered")
 # The App title and tagline.
 st.title("The Ultimate Career Decision-Making Guide:- Data Jobs")
-st.write("Navigating the Data-Driven Career Landscape: A Deep Dive into Artificisl Intelligence, Machine Learning, and Data Science Salaries. \n"
+st.write("Navigating the Data-Driven Career Landscape: A Deep Dive into Artificial Intelligence, Machine Learning, and Data Science Salaries. \n"
          "Enabling you to make the most informed career decisions on AI, ML, and Data Science spaces.")
 
 # Loading an image from a local file.
 image_path = 'Image_Title.PNG' 
 image = Image.open(image_path)
 st.image(image, caption='All the Reasons to be Excited. Goodies Available to You!!', use_column_width=True)
-st.write("Believe It!! These are just but examples of the available spaces to take Advantage of \n"
+st.write("Believe It!! These are just but examples of the available spaces to take advantage of \n"
          "and Realize Your Dreams in no time.")
 
 # Creating an expandable box about this App.
@@ -69,7 +69,7 @@ def load_engineered_data():
         #1. Gets the current market exchange rate from the internet.
         #2. Convert salary_in_usd into Shillings by multiplying it by the exchange rate.
         #3. And then add the new column to the DataFrame with the new salary in Kenya Shillings.""" 
-        # Import the requests library for processing HTTP requests that are sent and received from the exchange rate website.
+        # Import the requests library to process HTTP requests that are sent and received from the exchange rate website.
     api_key = "YOUR_API_KEY"
     base_url = 'https://open.er-api.com/v6/latest/USD'
     def get_exchange_rate():
@@ -242,7 +242,10 @@ def Insight_8():
                                          y='Salary_in_KES',
                                          labels={'Salary_in_KES': 'Total Salary in Kenyan Shillings'})
     st.plotly_chart(fig_EmployeeResidence_USDSalary)
-    st.write("Figure 8: The results are similar to that of insight 7, therefore, refer to visualization on Figure 7 above.")
+    st.write("Figure 8: The Histogram shows that most of the salary was paid to companies located in the United States of America (US) \n"
+             "followed by those in Great Britain (GB), and Canada (CA) respectively. This means that the Geographical locations of companies \n"
+             "is impacting the distribution of salary. From the analysis, it can be concluded that for Kenyans, the fully remote and freelance \n"
+             "work models are the best choices because moving to other countries such as the US and Great Britain is difficult and comes with extra costs.")
     
 def Insight_9():
     st.title("9. Salary Distribution Over Different Company Locations in USD")
@@ -253,7 +256,7 @@ def Insight_9():
     # Show the plot
     st.plotly_chart(fig_CompanyLocation_USDSalary)
     st.write("Figure 9: The histogram chart indicates that most salaries were paid to employees working for companies\n"
-            "based in the USA followed by United Kingdom, and canada as depicted in Insight 9. The results strongly indicate that\n"
+            "based in the USA followed by the United Kingdom, and Canada as depicted in Insight 9. The results strongly indicate that\n"
             "those working and living in the same region with their employer companies have high chances of earning more compared to others.\n"
             "This trend might also mean that companies which are seriously focused in adopting AI, ML, and Data Science are\n"
             "based in countries with the highest paid salaries.")
@@ -261,7 +264,7 @@ def Insight_9():
 # Dropdown menu to select visualization
 insights = ['Insight_1', 'Insight_2', 'Insight_3', 'Insight_4', 'Insight_5', 'Insight_6', 'Insight_7', 'Insight_8', 'Insight_9']
 selected_Insight = st.selectbox('Select an Insight From the Dropdown Menu to Visualize', insights)
-# Display selected visualization with description
+# Display selected visualization with a description
 if selected_Insight == 'Insight_1':
     Insight_1()
 elif selected_Insight == 'Insight_2':
