@@ -113,10 +113,10 @@ def Insight_1():
     SalaryinKES_EmploymentType = data.groupby('employment_type')['Salary_in_KES'].mean().reset_index()
     fig_SalaryinKES_EmploymentType = px.bar(SalaryinKES_EmploymentType, x='employment_type', y='Salary_in_KES')
     st.plotly_chart(fig_SalaryinKES_EmploymentType)
-    st.write("Figure 1: The chart shows that those who were employed permanent earned more followed by those on contract.\n "
-    "The chart also shows that those who were employed as part-time earned less than those on full-time.\n"
+    st.write("Figure 1: The chart shows that those who were employed permanently earned more followed by those on contract.\n "
+    "Also, it shows that those who were employed part-time earned less than those who were employed full-time.\n"
     "The chart also shows that those who worked as freelancers earned less than those on contract.\n"
-    "Therefore, consider going for those employment types that are highly paid such as Full-Time positions.")
+    "Therefore, consider going for those employment types that are highly paid, such as Full-Time positions.")
 
 # Pie-Chart Visualization.
 def Insight_2():
@@ -130,10 +130,10 @@ def Insight_2():
     plt.legend(vis1_work_year.index, title="Work_Year", loc="center left", bbox_to_anchor=(1, 0, 0.5, 1))
     st.pyplot(plt)
     st.write("Figure 2: The pie chart shows the distribution of the salary paid by each work_year.\n"
-             "More salaries were paid in 2023 as compared to other work_years.\n"
+             "More salaries were paid in 2024 as compared to other work_years.\n"
     " This shows that the opportunities in these spaces are increasing by the day. \n"
     "It is essential to be part of the growth by starting or transitioning your career into one of the technology spaces. \n"
-    "To persue and actualize your dreams you can join data science related courses in institutions such as Africa Data School or Moringa.")
+    "To pursue and actualize your dreams, you can take data science-related courses at institutions such as Africa Data School or Moringa.")
 
 def Insight_3():
     st.title("3. Salary Distribution Over Remote_Ratios")
@@ -149,7 +149,7 @@ def Insight_3():
              "indicating that most of the hiring companies represented on the dataset value physical presence of employees.\n"
              "This trend may not be favorable for people located in different countries with the companies they are seeking to be employeed in. \n"
              "The chart also shows that the 'Fully Remote (>80%)' model had the second highest salaries paid followed by the 'Partially Remote/Hybrid (==50%)' model. \n"
-             "Therefore, it is easy for a Kenyan to train and get hired remotelly or partially remote by global companies.")
+             "Therefore, it is easy for a Kenyan to train and get hired remotely or partially remotely by global companies.")
 
 def Insight_4():
     st.title("4. Salary Distribution by Company_Size")
@@ -166,7 +166,7 @@ def Insight_4():
     "The 'Small' company size has the third highest salaries paid.\n This means that small and medium enterprises should be the prime target since the salary \n"
     "distributions indicates their appeciation and adoption of these technologies and people with relevant skills. This is attributed to their fast\n"
     "growth rates and value for innovation to fuel strategic and competitive development. There are high chances of career growth or \n"
-    "even startups success because AI, ML, & Data Science adoption is high in the small and medium companies.")
+    "Even startups succeed because AI, ML, & Data Science adoption is high in the small and medium companies.")
 
 def Insight_5():
     st.title('5. Salary Distribution by Experience_Level')
@@ -183,7 +183,7 @@ def Insight_5():
     "has the medium or second lowest salaries paid. The 'Senior-level/Expert (SE)' experience level has the highest salaries paid.\n"
     "The 'Executive-level/Director (EX)' experience level has the fourth highest salaries paid.\n"
     "There is a clear indication that as experience level increases, the salaries paid increases. \n"
-    "Therefore, career advancement or transition into these spaces is worthy considereation as experience comes with excellent rewards.")
+    "Therefore, career advancement or transition into these spaces is worthy of consideration as experience comes with excellent rewards.")
 
 # Creating a bar graph to visualize and rank the highest paid or top 30 job categories.
 def Insight_6():
@@ -226,9 +226,9 @@ def Insight_7():
                                          labels={'Salary_in_KES': 'Total Salary in KES'})
     st.plotly_chart(fig_EmployeeResidence_KESSalary)
     st.write("Figure 7: The Histogram shows that most of the salary was paid to employees residing in the United States of America (US) \n"
-             "followed by those in Great Britain (GB), and in Canada (CA) respectively. This means that Geographical locations of companies \n"
-             "is impacting the distribution of salary. From the analysis it can be concluded that for Kenyans, the fully remote and freelance \n"
-             "work models are the best choices because moving to other countries such as US and GE is difficult and comes with extra costs.")
+             "followed by those in Great Britain (GB) and Canada (CA), respectively. This means that the Geographical locations of companies \n"
+             "is impacting the distribution of salary. From the analysis, it can be concluded that for Kenyans, the fully remote and freelance \n"
+             "work models are the best choices because moving to other countries such as the US and GE is difficult and comes with extra costs.")
 
 def Insight_8():
     st.title("Salary - (KES) Distribution Based on Different Company Locations")
@@ -243,7 +243,7 @@ def Insight_8():
                                          labels={'Salary_in_KES': 'Total Salary in Kenyan Shillings'})
     st.plotly_chart(fig_EmployeeResidence_USDSalary)
     st.write("Figure 8: The Histogram shows that most of the salary was paid to companies located in the United States of America (US) \n"
-             "followed by those in Great Britain (GB), and Canada (CA) respectively. This means that the Geographical locations of companies \n"
+             "followed by those in Great Britain (GB) and Canada (CA), respectively. This means that the Geographical locations of companies \n"
              "is impacting the distribution of salary. From the analysis, it can be concluded that for Kenyans, the fully remote and freelance \n"
              "work models are the best choices because moving to other countries such as the US and Great Britain is difficult and comes with extra costs.")
     
@@ -256,8 +256,8 @@ def Insight_9():
     # Show the plot
     st.plotly_chart(fig_CompanyLocation_USDSalary)
     st.write("Figure 9: The histogram chart indicates that most salaries were paid to employees working for companies\n"
-            "based in the USA followed by the United Kingdom, and Canada as depicted in Insight 9. The results strongly indicate that\n"
-            "those working and living in the same region with their employer companies have high chances of earning more compared to others.\n"
+            "based in the USA, followed by the United Kingdom and Canada, as depicted in Insight 9. The results strongly indicate that\n"
+            "Those working and living in the same region with their employer companies have higher chances of earning more compared to others.\n"
             "This trend might also mean that companies which are seriously focused in adopting AI, ML, and Data Science are\n"
             "based in countries with the highest paid salaries.")
 
